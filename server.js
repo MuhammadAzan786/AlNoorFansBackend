@@ -14,7 +14,6 @@ const cartRoutes = require("./routes/cartRoutes");
 const orderRoutes = require("./routes/orderRoutes");
 const contactController = require("./routes/messageRoute");
 
-
 const app = express();
 
 // Middleware
@@ -23,7 +22,7 @@ app.use(express.json());
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 app.use(
   cors({
-    origin: process.env.FRONTEND_DOMAIN_NAME,
+    origin: "https://alnoor-fans-front-end.vercel.app",
     credentials: true,
     optionsSuccessStatus: 200,
   })
@@ -36,7 +35,7 @@ app.use("/api/product", productRoutes);
 app.use("/api/order", orderRoutes);
 app.use("/api/cart", cartRoutes);
 app.use("/api/contact", contactController);
-app.use("/api/banner",bannerRoutes)
+app.use("/api/banner", bannerRoutes);
 // Database connection
 dbconnection();
 
