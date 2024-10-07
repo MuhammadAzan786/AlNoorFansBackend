@@ -115,7 +115,7 @@ const WELCOME_EMAIL = `<!DOCTYPE html>
                 <li><strong>Latest Updates:</strong> Stay informed about new products and innovations in our lineup.</li>
                 <li><strong>Dedicated Support:</strong> Our team is always here to assist you with any inquiries or concerns.</li>
             </ul>
-            <p style="color: #555; line-height: 1.6;">To get started, we recommend exploring our website and checking out our latest fan designs. If you have any questions or need assistance, feel free to reach out to our support team at <a href="mailto:info@alnoorfans.com" style="color: #1a73e8; text-decoration: none;">info@alnoorfans.com</a> or visit our <a href="[Support Page URL]" style="color: #1a73e8; text-decoration: none;">Support Page</a>.</p>
+            <p style="color: #555; line-height: 1.6;">To get started, we recommend exploring our website and checking out our latest fan designs. If you have any questions or need assistance, feel free to reach out to our support team at <a href="mailto:info@alnoorfans.com" style="color: #1a73e8; text-decoration: none;">info@alnoorfans.com</a></p>
             <p style="color: #555; line-height: 1.6;">Thank you for choosing Alnoor Fans. We look forward to serving you and making your experience with us exceptional!</p>
         </div>
         <div style="text-align: center; padding-top: 20px; border-top: 1px solid #e0e0e0;">
@@ -147,7 +147,7 @@ const ORDER_CONFIRMATION = `<!DOCTYPE html>
             <p style="color: #555; line-height: 1.6;">Dear Customer,</p>
             <p style="color: #555; line-height: 1.6;">Thank you for choosing Alnoor Fans! We are delighted to confirm that we have received your order.</p>
             <p style="color: #555; line-height: 1.6;">Your order number is <strong>{{ORDER_NUMBER}}</strong>.</p>
-            <p style="color: #555; line-height: 1.6;">We are currently processing your order and will notify you once it has been shipped. If you have any questions or need further assistance, please do not hesitate to contact us on <a style="color: #1a73e8; text-decoration: none;">03352226024</a>.</p>
+            <p style="color: #555; line-height: 1.6;">We are currently processing your order and will notify you once it has been shipped. If you have any questions or need further assistance, please do not hesitate to contact us on <a style="color: #1a73e8; text-decoration: none;">+92 345 6333393</a>.</p>
             <p style="color: #555; line-height: 1.6;">Thank you once again for choosing Alnoor Fans. We appreciate your business and look forward to serving you again!</p>
         </div>
         <div style="padding-bottom: 20px;">
@@ -170,7 +170,7 @@ const ORDER_CONFIRMATION = `<!DOCTYPE html>
             <p style="color: #777; font-size: 14px; margin: 5px 0;"><strong>Contact Us:</strong></p>
            
             <p style="color: #777; font-size: 14px; margin: 5px 0;">Phone: +92 345 6333393</p>
-            <p style="color: #777; font-size: 14px; margin: 5px 0;">Mobile: 03352226024</p> <!-- Added mobile number -->
+            <p style="color: #777; font-size: 14px; margin: 5px 0;">Mobile: +92 345 6333393</p> <!-- Added mobile number -->
         </div>
     </div>
 </body>
@@ -194,7 +194,7 @@ const PAYMENT_CONFIRMATION = `<!DOCTYPE html>
             <p style="color: #555; line-height: 1.6;">Dear Customer,</p>
             <p style="color: #555; line-height: 1.6;">We are pleased to inform you that your payment has been successfully received.</p>
             <p style="color: #555; line-height: 1.6;">Your order is now confirmed, and we are preparing it for shipment. You will receive a notification once your order has been dispatched.</p>
-            <p style="color: #555; line-height: 1.6;">If you have any questions or require further assistance, please feel free to contact us on 03352226024.</p>
+            <p style="color: #555; line-height: 1.6;">If you have any questions or require further assistance, please feel free to contact us on +92 345 6333393.</p>
             <p style="color: #555; line-height: 1.6;">Thank you for your trust in Alnoor Fans. We appreciate your business and look forward to serving you again!</p>
         </div>
         <div style="text-align: center; padding-top: 20px; border-top: 1px solid #e0e0e0;">
@@ -203,7 +203,7 @@ const PAYMENT_CONFIRMATION = `<!DOCTYPE html>
             <p style="color: #777; font-size: 14px; margin: 5px 0;"><strong>Contact Us:</strong></p>
            
             <p style="color: #777; font-size: 14px; margin: 5px 0;">Email: <a href="info@alnoorfans.com" style="color: #1a73e8; text-decoration: none;">info@alnoorfans.com</a></p>
-            <p style="color: #777; font-size: 14px; margin: 5px 0;">Phone: 03352226024</p>
+            <p style="color: #777; font-size: 14px; margin: 5px 0;">Phone: +92 345 6333393</p>
         </div>
     </div>
 </body>
@@ -328,10 +328,10 @@ const ORDER_SHIPPED = `<!DOCTYPE html>
         <div class="footer">
             <p>For any questions or support, feel free to reach us at:</p>
             <p class="footer-contact">
-                <strong>Email:</strong> <a href="mailto:support@alnoorfans.com">support@alnoorfans.com</a><br>
-                <strong>Phone:</strong> +123-456-7890
+                <strong>Email:</strong> <a href="mailto:info@alnoorfans.com">info@alnoorfans.com</a><br>
+                <strong>Phone:</strong> +92 345 6333393
             </p>
-            <p><a href="https://alnoorfans.com" class="btn">Visit Our Website</a></p>
+           
         </div>
     </div>
 </body>
@@ -352,7 +352,7 @@ const ORDER_CANCELED = `<!DOCTYPE html>
         </div>
         <div style="padding-bottom: 20px;">
             <p style="color: #555; line-height: 1.6;">Dear Customer,</p>
-            <p style="color: #555; line-height: 1.6;">We regret to inform you that your order has been canceled. If you have any questions, please contact us on 03352226024.</p>
+            <p style="color: #555; line-height: 1.6;">We regret to inform you that your order has been canceled. If you have any questions, please contact us on +92 345 6333393.</p>
             <p style="color: #555; line-height: 1.6;">We apologize for any inconvenience.</p>
         </div>
         <div style="text-align: center; padding-top: 20px; border-top: 1px solid #e0e0e0;">
