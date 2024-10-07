@@ -25,7 +25,7 @@ module.exports = {
         categoryId,
         categoryImage: {
           public_id: ImageUrl.public_id,
-          url: ImageUrl.url,
+          url: ImageUrl.secure_url,
         },
         categoryDesc,
       });
@@ -69,7 +69,7 @@ module.exports = {
           // Set the new image in the category
           Category.categoryImage = {
             public_id: newCategory.public_id,
-            url: newCategory.url,
+            url: newCategory.secure_url,
           };
         }
       }

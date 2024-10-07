@@ -26,7 +26,7 @@ module.exports = {
             public_id: ImageUrl.public_id,
             created_at: ImageUrl.created_at,
             bytes: ImageUrl.bytes,
-            url: ImageUrl.url,
+            url: ImageUrl.secure_url,
             format: ImageUrl.format,
             original_filename: ImageUrl.original_filename,
           };
@@ -39,7 +39,7 @@ module.exports = {
             public_id: ThumbnailUrl.public_id,
             created_at: ThumbnailUrl.created_at,
             bytes: ThumbnailUrl.bytes,
-            url: ThumbnailUrl.url,
+            url: ThumbnailUrl.secure_url,
             format: ThumbnailUrl.format,
             original_filename: ThumbnailUrl.original_filename,
           };
@@ -333,7 +333,7 @@ module.exports = {
               public_id: ImageUrl.public_id,
               created_at: ImageUrl.created_at,
               bytes: ImageUrl.bytes,
-              url: ImageUrl.url,
+              url: ImageUrl.secure_url,
               format: ImageUrl.format,
               original_filename: ImageUrl.original_filename,
             };
@@ -363,7 +363,7 @@ module.exports = {
               public_id: ThumbnailUrl.public_id,
               created_at: ThumbnailUrl.created_at,
               bytes: ThumbnailUrl.bytes,
-              url: ThumbnailUrl.url,
+              url: ThumbnailUrl.secure_url,
               format: ThumbnailUrl.format,
               original_filename: ThumbnailUrl.original_filename,
             };
@@ -414,6 +414,16 @@ module.exports = {
     } catch (error) {
       console.log(error);
       res.status(500).send("Error updating product stock");
+    }
+  }),
+
+  getProductsWithoutfilter: asyncHandler(async (req, res) => {
+    try {
+      const products = await Product.find({});
+      res.status(200).json(products);
+    } catch (error) {
+      console.error(error);
+      res.status(500).send("Error fetching products");
     }
   }),
 };

@@ -53,6 +53,10 @@ router.post(
 );
 
 router.get("/getProducts", productController.getAllProducts);
+router.get(
+  "/getProductsWithoutfilter",
+  productController.getProductsWithoutfilter
+);
 
 router.get("/product/:id", productController.getProducts);
 router.get("/uniqueproduct/:id", productController.getUniqueProducts);

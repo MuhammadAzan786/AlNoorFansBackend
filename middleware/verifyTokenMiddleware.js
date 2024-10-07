@@ -5,7 +5,7 @@ const User = require("../model/authenticationModel");
 
 const verifyToken = async (req, res, next) => {
   const token = req.cookies.token;
-  console.log("here to verify token");
+  console.log("here to verify token", token);
   if (!token) {
     return res.status(401).send("Not Authorized");
   }

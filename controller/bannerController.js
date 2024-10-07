@@ -26,7 +26,7 @@ module.exports = {
             public_id: ImageUrl.public_id,
             created_at: ImageUrl.created_at,
             bytes: ImageUrl.bytes,
-            url: ImageUrl.url,
+            url: ImageUrl.secure_url,
             format: ImageUrl.format,
             original_filename: ImageUrl.original_filename
           };

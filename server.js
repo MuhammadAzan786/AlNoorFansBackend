@@ -22,7 +22,7 @@ app.use(express.json());
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 app.use(
   cors({
-    origin: "https://alnoor-fans-front-end.vercel.app",
+    origin: process.env.FRONTEND_DOMAIN_NAME,
     credentials: true,
     optionsSuccessStatus: 200,
   })

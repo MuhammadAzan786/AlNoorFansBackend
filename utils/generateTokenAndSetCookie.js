@@ -7,7 +7,7 @@ generateTokenAndSetCookie = (res, userId) => {
   res.cookie("token", token, {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",
-    sameSite: "none", // Ensures the cookie is only sent for same-site requests
+    sameSite: "strict", // Ensures the cookie is only sent for same-site requests
     maxAge: 10 * 24 * 60 * 60 * 1000,
   });
   return token;
